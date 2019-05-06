@@ -151,17 +151,6 @@ trait SimpleMessageTrait
      */
     public function line($line)
     {
-        return $this->with($line);
-    }
-
-    /**
-     * Add a line of text to the notification.
-     *
-     * @param  mixed  $line
-     * @return $this
-     */
-    public function with($line)
-    {
         if ($line instanceof Action) {
             $this->action($line->text, $line->url);
         } elseif (! $this->actionText) {
