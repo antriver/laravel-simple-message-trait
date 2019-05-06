@@ -1,6 +1,6 @@
 {
     "name": "antriver/laravel-simple-message-trait",
-    "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Anthony Kuske",

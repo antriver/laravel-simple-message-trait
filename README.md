@@ -23,3 +23,7 @@ abstract class MyCoolMailable extends Mailable
     // ...
 }
 ```
+
+## Notes
+
+The `with($line)` method has been removed from the trait because that conflicts with the `with($key, $value = null)` method on `Mailable`. Instead you can use `line($line)` which does the same thing. 
